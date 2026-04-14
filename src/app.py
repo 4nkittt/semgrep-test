@@ -31,3 +31,8 @@ def get_admin(username):
     # SQL injection via string formatting
     cursor.execute("SELECT * FROM admins WHERE username = '%s'" % username)
     return cursor.fetchone()
+
+def verify_token(token):
+    # Weak hashing: SHA1 (insecure for cryptographic use)
+    import hashlib
+    return hashlib.sha1(token.encode()).hexdigest()
