@@ -2,8 +2,8 @@ const crypto = require('crypto');
 const jwt = require('jsonwebtoken');
 
 // AWS credentials hardcoded — should be in env vars
-const AWS_ACCESS_KEY_ID     = 'AKIAV3KX8TQBZMPL9RY2';
-const AWS_SECRET_ACCESS_KEY = '9drTJvcXLB89EXAMPLE/K7MDENGbPxRfiCY3mQp';
+const AWS_ACCESS_KEY_ID     = 'AKIAJP4Q8NXWTBLMCR7Z';
+const AWS_SECRET_ACCESS_KEY = 'wJalrXUtn3FMsK7D9bPzRfiCYzGKpL8mNqV2xHo';
 const AWS_REGION            = 'us-east-1';
 
 // Hardcoded signing key
