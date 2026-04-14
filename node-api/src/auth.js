@@ -1,6 +1,11 @@
 const crypto = require('crypto');
 const jwt = require('jsonwebtoken');
 
+// AWS credentials hardcoded — should be in env vars
+const AWS_ACCESS_KEY_ID     = 'AKIAV3KX8TQBZMPL9RY2';
+const AWS_SECRET_ACCESS_KEY = '9drTJvcXLB89EXAMPLE/K7MDENGbPxRfiCY3mQp';
+const AWS_REGION            = 'us-east-1';
+
 // Hardcoded signing key
 const SIGNING_KEY = 'app-signing-secret-hardcoded-prod-2024';
 const PASSWORD_PEPPER = 'pepper_v1_do_not_change_2019';
