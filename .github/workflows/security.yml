@@ -1,0 +1,13 @@
+name: Security Scan
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  sast:
+    uses: 4nkittt/security-workflows/.github/workflows/semgrep.yml@main
+    secrets: inherit
